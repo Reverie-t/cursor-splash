@@ -1,0 +1,12 @@
+装上或 Cursor 更新之后重装：
+  node apply.js
+
+拆掉：
+  node remove.js
+
+Cursor 不在 D:\cursor、也不在系统默认目录时，先设环境变量 CURSOR_APP，指向里面的 resources\app。
+改名字、称呼：splash.js 最上面的 film。
+装完要完全退出 Cursor 再打开。只在第一次进入时播，切换智能体窗口不会再播。
+想再看一遍：在开发者工具里执行 localStorage.removeItem('cursor-splash-played')，然后完全退出再打开。
+跳过：右上角 Skip，或按 Esc。档案板上要确认的两步，也可以按 Enter 或空格。
+详细说明见 README.md。
